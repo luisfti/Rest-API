@@ -9,7 +9,7 @@ Como rodar o backend
 
 O projeto fica aberto em: [http://localhost:3300/customers](http://localhost:3300/customers) .
 
-OBS: É necessário configurarar as credenciais do PostgreSQL no arquivo connection.js
+OBS: É necessário configurar as credenciais do PostgreSQL no arquivo connection.js
 
 
 
