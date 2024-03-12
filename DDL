@@ -1,0 +1,39 @@
+-- Table: public.customers
+
+-- DROP TABLE IF EXISTS public.customers;
+
+CREATE TABLE IF NOT EXISTS public.customers
+(
+    id integer NOT NULL GENERATED ALWAYS AS IDENTITY ( INCREMENT 1 START 1 MINVALUE 1 MAXVALUE 900 CACHE 1 ),
+    name text COLLATE pg_catalog."default" NOT NULL,
+    email text COLLATE pg_catalog."default",
+    phone text COLLATE pg_catalog."default",
+    CONSTRAINT customers_pkey PRIMARY KEY (id)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.customers
+    OWNER to postgres;
+
+
+-----------------------------------------------------------------------------------------------------------
+
+
+-- Table: public.coordinates
+
+-- DROP TABLE IF EXISTS public.coordinates;
+
+CREATE TABLE IF NOT EXISTS public.coordinates
+(
+    id integer NOT NULL,
+    cpf_customers text COLLATE pg_catalog."default" NOT NULL,
+    coordinates_x integer,
+    coordinates_y integer,
+    CONSTRAINT coordinates_pkey PRIMARY KEY (id)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.coordinates
+    OWNER to postgres;
