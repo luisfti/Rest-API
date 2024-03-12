@@ -1,9 +1,9 @@
 # Instalando dependencias
 
-### `npm i bootstrap react-router-dom axios`
+### `npm i pg express cors --save`
 
-## Como rodar o frontend
+## Como rodar o backend
 
-### `npm start`
+### `node api.js`
 
-O projeto fica aberto em: [http://localhost:3000](http://localhost:3000) .
+O projeto fica aberto em: [http://localhost:3000](http://localhost:3300/customers) .
